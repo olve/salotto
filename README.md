@@ -1,3 +1,3 @@
 # salotto
 
-[http://salottotrondheim.no](salottotrondheim.no) website
+[salottotrondheim.no](http://salottotrondheim.no) website
