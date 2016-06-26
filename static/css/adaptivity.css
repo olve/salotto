@@ -1,0 +1,21 @@
+@media only screen and (max-width: 435px){
+	#header li {
+    display: block;
+    margin-bottom: 45px;
+	}
+}
+@media only screen and (max-width: 800px){
+	#about {
+    width: 100%;
+    padding: 0 2.5% 7.5% 2.5%;
+	}
+  #contact {
+    padding: 5%;
+  }
+}
+
+@media only screen and (max-height: 487px){
+	#about {
+    font-size: 14px;
+	}
+}
