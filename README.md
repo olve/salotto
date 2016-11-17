@@ -1,3 +1,3 @@
 # salotto
 
-[salottotrondheim.no](http://salottotrondheim.no) website
+Scrapped website prototype for Salotto hairdresser in Trondheim, Norway.
