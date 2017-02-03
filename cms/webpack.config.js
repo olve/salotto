@@ -4,7 +4,6 @@ const path = require('path')
 const webpack = require('webpack')
 
 const context = path.join(__dirname, './src')
-
 module.exports = {
     context,
 
@@ -103,13 +102,13 @@ module.exports = {
           name: 'vendor',
           filename: 'vendor.bundle.js'
         }),
-/*        new webpack.DefinePlugin({
-          'process.env': JSON.stringify({
-            NODE_ENV:    process.env.NODE_ENV,
-            ENV_NAME:    process.env.ENV_NAME,
-            GRAPHQL_URL: process.env.GRAPHQL_URL,
-          })
-        }) */
+        new webpack.DefinePlugin({
+          'process.env': {
+            NODE_ENV:    '"' + process.env.NODE_ENV + '"',
+            ENV_NAME:    '"' + process.env.ENV_NAME + '"',
+            GRAPHQL_URL: '"' + process.env.GRAPHQL_URL + '"'
+          }
+        })
      ],
 
     devServer: {
