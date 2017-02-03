@@ -1,0 +1,52 @@
+{
+  "name": "salotto",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "lint": "eslint --ext js,jsx src"
+  },
+  "babel": {
+    "plugins": [
+      "transform-class-properties",
+      "syntax-class-properties"
+    ],
+    "presets": [
+      "stage-0",
+      "env",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "babel-plugin-syntax-class-properties": "*",
+    "babel-plugin-transform-class-properties": "*",
+    "babel-plugin-transform-decorators-legacy": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-polyfill": "*",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
+    "babel-relay-plugin": "^0.11.0",
+    "css-loader": "*",
+    "eslint": "*",
+    "eslint-plugin-react": "*",
+    "file-loader": "*",
+    "graphql": "*",
+    "history": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-relay": "*",
+    "react-router": "*",
+    "react-router-relay": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*",
+    "worker-loader": "*"
+  }
+}
