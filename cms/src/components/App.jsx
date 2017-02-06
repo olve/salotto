@@ -1,19 +1,20 @@
 import React from 'react'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-
-import RaisedButton from 'material-ui/RaisedButton'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import injectTapEventPlugin from 'react-tap-event-plugin'
 
 //material-ui dependency
 injectTapEventPlugin();
 
-
-
 export default class App extends React.Component {
+  static propTypes = {
+    children: React.PropTypes.oneOfType([
+      React.PropTypes.array, React.PropTypes.node
+    ]).isRequired
+  }
   render() {
     return (
       <MuiThemeProvider>
-        <RaisedButton label="Default" onTouchTap={function() {alert(1)}}/>
+        {this.props.children}
       </MuiThemeProvider>
     )
   }
