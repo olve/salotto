@@ -1,0 +1,31 @@
+.mainmenu-card {
+  margin: 10px;
+  width: 250px;
+  height: 140px;
+}
+.mainmenu-card .paper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px;
+}
+.mainmenu-card .paper:hover {
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px !important;
+}
+.mainmenu-card .svg-wrap {
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.mainmenu-card .svg-wrap svg {
+  align-self: center;
+  fill: rgba(0,0,0,0.53) !important;
+}
+.mainmenu-card a {
+  width: auto;
+  text-decoration: none;
+}

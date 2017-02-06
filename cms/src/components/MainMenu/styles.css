@@ -1,0 +1,18 @@
+#mainmenu {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#mainmenu .cards {
+  align-self: center;
+  display: flex;
+}
+#mainmenu .aligner-item--top {
+  align-self: flex-start;
+}
+#mainmenu .aligner-item--bottom {
+  align-self: flex-end;
+}
