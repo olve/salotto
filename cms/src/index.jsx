@@ -1,4 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render( <p>Hello</p>, document.getElementById('app-mount') )
+import App from './components/App'
+
+ReactDOM.render( <App />, document.getElementById('app-mount') )
