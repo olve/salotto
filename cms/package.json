@@ -18,6 +18,11 @@
       "react"
     ]
   },
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "material-ui": "*"
+  },
   "devDependencies": {
     "babel-cli": "*",
     "babel-core": "*",
@@ -36,14 +41,7 @@
     "eslint": "*",
     "eslint-plugin-react": "*",
     "file-loader": "*",
-    "graphql": "*",
-    "history": "*",
-    "react": "*",
-    "react-dom": "*",
     "react-hot-loader": "^3.0.0-beta.6",
-    "react-relay": "*",
-    "react-router": "*",
-    "react-router-relay": "*",
     "style-loader": "*",
     "webpack": "*",
     "webpack-dev-server": "*",
