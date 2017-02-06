@@ -10,9 +10,21 @@
   align-self: center;
   display: flex;
 }
-#mainmenu .aligner-item--top {
-  align-self: flex-start;
+#mainmenu-logo-wrap .salotto-logo {
+  height: 75px;
 }
-#mainmenu .aligner-item--bottom {
-  align-self: flex-end;
+#mainmenu-logo-wrap {
+  margin-bottom: 35px;
+  position: relative;
+}
+#mainmenu-logo-wrap p {
+  position: absolute;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  transform: rotate(-30deg);
+  right: -15px;
+  bottom: -5px;
+  font-family: 'Raleway', 'josefin-sans', 'roboto'
+
 }
