@@ -104,9 +104,9 @@ module.exports = {
         }),
         new webpack.DefinePlugin({
           'process.env': {
-            NODE_ENV:    '"' + process.env.NODE_ENV + '"',
-            ENV_NAME:    '"' + process.env.ENV_NAME + '"',
-            GRAPHQL_URL: '"' + process.env.GRAPHQL_URL + '"'
+            NODE_ENV:    process.env.NODE_ENV === undefined ? undefined : '"' + process.env.NODE_ENV + '"',
+            ENV_NAME:    process.env.ENV_NAME === undefined ? undefined : '"' + process.env.ENV_NAME + '"',
+            GRAPHQL_URL: process.env.GRAPHQL_URL === undefined ? undefined : '"' + process.env.GRAPHQL_URL + '"'
           }
         })
      ],
