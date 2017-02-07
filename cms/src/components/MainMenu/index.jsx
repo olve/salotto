@@ -18,7 +18,7 @@ export default class MainMenu extends React.Component {
 
         <div className="cards">
           <Card title="select background images" href="images" icon={CollectionsIcon} />
-          <Card title="Edit text in about-section" href="about" icon={TextFieldsIcon} />
+          <Card title="Edit about-section text" href="about" icon={TextFieldsIcon} />
         </div>
 
       </div>

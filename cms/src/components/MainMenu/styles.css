@@ -20,11 +20,10 @@
 #mainmenu-logo-wrap p {
   position: absolute;
   color: #000;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 300;
   transform: rotate(-30deg);
   right: -15px;
   bottom: -5px;
-  font-family: 'Raleway', 'josefin-sans', 'roboto'
+  font-family: 'Roboto', sans-serif;
 
 }
