@@ -4,14 +4,22 @@ import redist from 'redist'
 const app = express()
 const router = express.Router()
 
-router.get('/', (req, res) => {
-  res.json({message: 'hi'})
-})
+
+router.route('/images')
+  .post((req, res) => {
+    //change something
+  })
+  .get((req, res) => {
+    //return something
+    res.json({message: 'hi'})
+  })
 
 
 
 
+//prefix urls with /api
+app.use(process.env.CMS_API_ROOT, router)
+app.listen(process.env.CMS_API_PORT)
 
-app.use('/api', router)
-app.listen(process.env.PORT)
-console.log(`listening on /api on port ${process.env.PORT}`)
+
+console.log(`listening on ${process.env.CMS_API_ROOT} on port ${process.env.CMS_API_PORT}`)
