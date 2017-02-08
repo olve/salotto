@@ -104,10 +104,11 @@ module.exports = {
         }),
         new webpack.DefinePlugin({
           'process.env': {
-            ENV_NAME:     process.env.ENV_NAME     === undefined ? undefined : '"' + process.env.ENV_NAME + '"',
-            CMS_API_PORT:     process.env.CMS_API_PORT === undefined ? undefined : '"' + process.env.CMS_API_PORT + '"',
-            CMS_API_ROOT: process.env.CMS_API_ROOT === undefined ? undefined : '"' + process.env.CMS_API_ROOT + '"'
-
+            ENV_NAME:      process.env.ENV_NAME     === undefined ? undefined : '"' + process.env.ENV_NAME + '"',
+            CMS_API_PORT:  process.env.CMS_API_PORT === undefined ? undefined : '"' + process.env.CMS_API_PORT + '"',
+            CMS_API_ROOT:  process.env.CMS_API_ROOT === undefined ? undefined : '"' + process.env.CMS_API_ROOT + '"',
+            CMS_API_HOST:  process.env.CMS_API_HOST === undefined ? undefined : '"' + process.env.CMS_API_HOST + '"',
+            CMS_API_PROTO: process.env.CMS_API_PROTO === undefined ? undefined : '"' + process.env.CMS_API_PROTO + '"'
           }
         })
      ],

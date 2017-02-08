@@ -7,6 +7,8 @@ const router = express.Router()
 
 router.route('/images')
   .post((req, res) => {
+    console.log('got POST')
+    res.json({message: 'hellopost'})
     //change something
   })
   .get((req, res) => {
