@@ -39,9 +39,12 @@ main {
   position: absolute;
   height: 100%;
   width: 100%;
-  transiton: background-color 0ms ease-in-out;
-  -webkit-transition: background-color 0ms ease-in-out;
-  -moz-transition: background-color 0ms ease-in-out;
+
+  -webkit-transition: background-color 0 ease-in-out;
+  -moz-transition: background-color 0 ease-in-out;
+  -ms-transition: background-color 0 ease-in-out;
+  -o-transition: background-color 0 ease-in-out;
+  transition: background-color 0 ease-in-out;
 }
 @keyframes fadein {
   0%{
@@ -74,11 +77,14 @@ main {
   color: #fff;
   padding: 15px;
   text-decoration: none;
-  transiton: color 100ms ease-in-out;
-	-webkit-transition: color 100ms ease-in-out;
-	-moz-transition: color 100ms ease-in-out;
   cursor: pointer;
   outline: 0;
+
+  -webkit-transition: color 100ms ease-in-out;
+  -moz-transition: color 100ms ease-in-out;
+  -ms-transition: color 100ms ease-in-out;
+  -o-transition: color 100ms ease-in-out;
+  transition: color 100ms ease-in-out;
 }
 #header a:hover {
   color: rgba(255, 255, 255, 0.6);
@@ -87,12 +93,18 @@ main {
   border: 2px solid #fff;
   padding: 16px;
   outline: 0;
-  transiton: color 170ms ease-in-out;
-	-webkit-transition: color 170ms ease-in-out;
-	-moz-transition: color 170ms ease-in-out;
-  transiton: background 170ms ease-in-out;
-	-webkit-transition: background 170ms ease-in-out;
-	-moz-transition: background 170ms ease-in-out;
+
+  -webkit-transition: color 170ms ease-in-out;
+  -moz-transition: color 170ms ease-in-out;
+  -ms-transition: color 170ms ease-in-out;
+  -o-transition: color 170ms ease-in-out;
+  transition: color 170ms ease-in-out;
+
+  -webkit-transition: background 170ms ease-in-out;
+  -moz-transition: background 170ms ease-in-out;
+  -ms-transition: background 170ms ease-in-out;
+  -o-transition: background 170ms ease-in-out;
+  transition: background 170ms ease-in-out;
 }
 #header ul > li:first-child a:hover {
   color: #181818;
@@ -140,13 +152,16 @@ main {
   color: #fff;
   display: block;
   text-decoration: none;
-  transiton: color 100ms ease-in-out;
-	-webkit-transition: color 100ms ease-in-out;
-	-moz-transition: color 100ms ease-in-out;
   text-transform: uppercase;
   margin-bottom: 5px;
   outline: 0;
   letter-spacing: 1px;
+
+  -webkit-transition: color 100ms ease-in-out;
+  -moz-transition: color 100ms ease-in-out;
+  -ms-transition: color 100ms ease-in-out;
+  -o-transition: color 100ms ease-in-out;
+  transition: color 100ms ease-in-out;
 }
 #contact a:nth-child(2) {
   letter-spacing: -0.3px;
