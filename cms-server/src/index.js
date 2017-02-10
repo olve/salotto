@@ -4,19 +4,20 @@ import redist from 'redist'
 const app = express()
 const router = express.Router()
 
+function cors(response) {
+  response.header("Access-Control-Allow-Origin", "*");
+  response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+}
 
 router.route('/images')
   .post((req, res) => {
-    console.log('got POST')
-    res.json({message: 'hellopost'})
-    //change something
+    cors(res)
+    res.json({message: 'post'})
   })
   .get((req, res) => {
-    //return something
-    res.json({message: 'hi'})
+    cors(res)
+    res.json({message: 'get'})
   })
-
-
 
 
 //prefix urls with /api
