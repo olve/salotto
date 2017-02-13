@@ -15,10 +15,11 @@ exports.get = (url) => fetch(url, {method: 'GET'})
                                 .catch(error => {
                                   console.log(error)
                                 })
-exports.post = (url, body) => fetch(url, {method: 'POST', body,})
+exports.post = (url, body, headers) => fetch(url, {method: 'POST', body: JSON.stringify(body), headers})
                                 .then(exports.handleErrors)
                                 .then(response => exports.parseResponse(response))
                                 .catch(error => {
                                   console.log(error)
                                 })
+
 export default exports
