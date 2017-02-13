@@ -18,7 +18,6 @@ app.use(cors)
 
 router.route('/images')
   .post((req, res) => {
-    console.log(req.body.images)
     res.json({message: 'post'})
   })
   .get((req, res) => {
@@ -26,7 +25,8 @@ router.route('/images')
   })
 
 app.use(process.env.CMS_API_ROOT, router)
+
+
+
 app.listen(process.env.CMS_API_PORT)
-
-
 console.log(`listening on ${process.env.CMS_API_ROOT} on port ${process.env.CMS_API_PORT}`)
